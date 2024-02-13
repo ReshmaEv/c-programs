@@ -1,0 +1,15 @@
+find the cube of a number
+
+#include <stdio.h>
+
+int main()
+{
+    int x,cube;
+    printf("Enter a number:");
+    scanf("%d",&x);
+    cube=x*x*x;
+    printf("the result is:%d",cube);
+
+    return 0;
+}
+

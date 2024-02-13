@@ -1,0 +1,15 @@
+convert fharenheit to celsius
+
+#include <stdio.h>
+
+int main()
+{
+    int fh,cel;
+    printf("enter the fahrenheit:");
+    scanf("%d",&fh);
+    cel=(fh-32)*5/9;
+    printf("celcious is %d",cel);
+
+    return 0;
+}
+

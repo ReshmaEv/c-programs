@@ -1,0 +1,19 @@
+ PRINT THE ENTERED NUMBER IN BETWEEN 0-100 OR NOT
+
+#include <stdio.h>
+
+int main()
+{
+    int num;
+    printf("Enter a number:");
+    scanf("%d",&num);
+    if(num>=0 && num<=100){
+       printf("the number is between 0 to 100") ;
+    }
+    else{
+      printf("the number is greater than 100");
+    }
+
+    return 0;
+}
+

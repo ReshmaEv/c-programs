@@ -1,0 +1,17 @@
+find vowels  and consonants
+#include <stdio.h>
+
+int main()
+{
+    char word;
+    printf("enter a letter:");
+    scanf("%c",&word);
+    if(word=='a' || word=='e' || word=='i'|| word=='o' || word=='u'){
+        printf("%c is a vowel ",word);
+    }else {
+        printf("%c is a consonants",word);
+    }
+
+    return 0;
+}
+

@@ -1,0 +1,33 @@
+making calculator using switch
+
+#include <stdio.h>
+
+int main()
+{ char operator;
+int num1, num2;
+    printf("enter the operator (+,-,*,/):");
+    scanf("%c",&operator);
+    printf("enter the two numbers:");
+    scanf("%d%d",&num1,&num2);
+    
+    switch(operator){
+        case '+':
+        printf("sum is %d",num1+num2);
+        break;
+        case '-':
+        printf("sub is %d",num1-num2);
+        break;
+        case '*':
+        printf("mul is %d",num1*num2);
+        break;
+        case '/':
+        printf("divi is %d",num1/num2);
+        break;
+        default:
+        printf("invalid operator");
+        break;
+    }
+
+    return 0;
+}
+

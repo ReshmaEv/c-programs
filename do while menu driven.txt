@@ -1,0 +1,38 @@
+menu driven program using do while
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{  
+char c;
+int choice;
+ do{
+     printf("\n1. print hello\n2. print world\n3.exit\n");
+     scanf("%d",&choice);
+     switch(choice){
+         case 1:
+         printf("hello\n");
+         break;
+         case 2:
+         printf("world\n");
+         break;
+         case 3:
+         exit(0);
+         break;
+         default:
+         printf("please enter valid number\n");
+         break;
+         
+     }
+      printf("do you want to enter again:(y/n)\n");
+     scanf(" %c",&c);
+     
+ }while(c=='y' || c=='Y');
+    
+}
+
+
+    
+
+

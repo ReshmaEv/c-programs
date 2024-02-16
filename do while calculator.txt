@@ -1,0 +1,53 @@
+do while caculator
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a,b,choice;
+    char c;
+    do{
+       printf("Enter two numbers:");
+       scanf("%d%d",&a,&b);
+       printf("\n1.do you want to sum  %d and %d",a,b);
+       printf("\n2.do you want to substract  %d and %d",a,b);
+       printf("\n3.do you want to  multiple  %d and %d",a,b);
+       printf("\n4.do you want to divide %d and %d",a,b);
+       printf("\n5.exit\n");
+       printf("enter your choice:");
+       scanf("%d",&choice);
+       switch(choice){
+           case 1:
+           printf("sum is %d\n",a+b);
+           break;
+           case 2:
+           printf("substraction is %d\n",a-b);
+           break;
+           case 3:
+           printf("mutiple is %d\n",a*b);
+           break;
+           case 4:
+           printf("division is %d\n",a/b);
+           break;
+           case 5:
+           exit(0);
+           break;
+           default:
+           printf("enter valid operation!\n");
+           break;
+           
+       }
+       printf("do you want to enter again! (y/n)");
+       scanf(" %c",&c);
+      
+    }
+         while(c=='y' || c=='Y');
+    
+
+    
+}
+
+
+
+

@@ -1,0 +1,19 @@
+find the area of a square using function
+
+#include <stdio.h>
+
+int area(int side){
+    return side*side;
+}
+
+int main()
+{
+    int result,num;
+    printf("enter the length:");
+    scanf("%d",&num);
+    result= area(num);
+    printf("area:%d",result);
+
+    return 0;
+}
+

@@ -1,0 +1,24 @@
+finding waterbill using if else if
+#include <stdio.h>
+
+
+int main()
+{
+    int litre,bill;
+    printf("enter the litre of water used:");
+    scanf("%d",&litre);
+    
+    if(litre<=100 ){
+      printf( "%d",  bill= litre*15);
+     }
+     else if(litre<=200){
+         printf("%d",bill=100*15+(litre-100)*14);
+     }else{
+         printf("%d",bill=(100*15)+(100*14)+(litre-200)*12);
+     }
+        
+    
+
+    return 0;
+}
+

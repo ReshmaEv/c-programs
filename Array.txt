@@ -1,0 +1,44 @@
+arrayprograms
+
+ #include <stdio.h>
+#include <string.h>
+
+int main()
+ {
+
+//     int numbers[]={1,2,3,4,5};
+//     for(int i=0;i<5;i++){
+//          printf("%d\n",numbers[i]);
+//     }
+//     numbers[1]=10;
+//     printf("\n");
+//     for(int i=0;i<5;i++){
+//          printf("%d\n",numbers[i]);
+    
+ char fruits[5][20];
+  printf("enter the names of fruits:");
+  for(int i=0;i<5;i++){
+      scanf("%s",&fruits[i]);
+  }
+   for(int i=0;i<5;i++){
+       printf("\n");
+       printf("%s\n",fruits[i]);
+   }
+
+    // int numbers[5];
+    // printf("enter numbers");
+    // for(int i=0;i<5;i++){
+    //     scanf("%d\n",&numbers[i]);
+    // }
+    // for(int i=0;i<5;i++){
+    //  printf("%d\n",numbers[i]);  
+    // } 
+
+    return 0;
+}
+
+
+    
+
+
+

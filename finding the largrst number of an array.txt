@@ -1,0 +1,19 @@
+finding the largest number of an array
+#include <stdio.h>
+
+int main()
+{
+     int arr[]={58,78,25,69,96,85,21};
+    int max=0;
+   
+    for(int i=1;i<7;i++){
+        if(arr[i]>max){
+           max = arr[i];  
+        }
+       
+    }
+    printf("largest number in the array is:%d",max);
+
+    return 0;
+}
+

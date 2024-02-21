@@ -1,0 +1,24 @@
+
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float CI,amount,principal,rate,tyme;
+    
+    printf("enter the principal amount:");
+    scanf("%f",&principal);
+    
+    printf("enter the rate of interest:");
+    scanf("%f",&rate);
+    
+    printf("enter the time:");
+    scanf("%f",&tyme);
+     amount= principal*(pow((1+rate/100),tyme));
+     CI = amount-principal;
+     
+     printf("the compound interest is:%.2f",CI);
+    
+
+    return 0;
+}
+

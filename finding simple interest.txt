@@ -1,0 +1,22 @@
+
+#include <stdio.h>
+
+int main()
+{
+    float SI,priamount,roi,tyme;
+    printf("Enter the principal amount:");
+    scanf("%f",&priamount);
+    
+    printf("Enter the rate of interest:");
+    scanf("%f",&roi);
+    
+    printf("enter the time:");
+    scanf("%f",&tyme);
+    
+    SI= (priamount*roi*tyme)/100;
+    
+    printf("simple interest is:%.2f",SI);
+
+    return 0;
+}
+

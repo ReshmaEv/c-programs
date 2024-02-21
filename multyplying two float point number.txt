@@ -1,0 +1,13 @@
+
+#include <stdio.h>
+
+int main()
+{
+    float num1,num2,multy;
+    printf("Enter two numbers:");
+    scanf("%f%f",&num1,&num2);
+    multy= num1*num2;
+    printf(" multiple of entered two numbers:%.2f",multy);
+    return 0;
+}
+

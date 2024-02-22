@@ -1,0 +1,23 @@
+find the number is paliendrom or not
+#include <stdio.h>
+
+int main()
+{
+    int num,orignl,paliendrom;
+    printf("Enter a number:");
+    scanf("%d",&num);
+    orignl=num;
+    
+    while(num>0){
+        paliendrom = (paliendrom*10 + num%10);
+        num = num/10;
+    }
+    if(orignl==paliendrom){
+        printf("the number %d is paliendrom",orignl);
+    }else{
+        printf("thr number %d is not paliendrom",orignl);
+    }
+    return 0;
+}
+
+

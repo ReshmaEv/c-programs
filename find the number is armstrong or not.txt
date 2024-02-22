@@ -1,0 +1,25 @@
+ find the number is armstrong or not
+#include <stdio.h>
+
+int main()
+{
+    int total,num,temp, remaindr=0;
+    printf("enter the number:");
+    scanf("%d",&num);
+    temp = num;
+    
+    while(num>0){
+        remaindr = num%10;
+        total = total+(remaindr*remaindr*remaindr);
+        num = num/10;
+    }
+    if(temp==total){
+        printf("the %d is armstrong number",total);
+        
+    }else{
+        printf("the %d is not armstong number",total);
+    }
+
+    return 0;
+}
+

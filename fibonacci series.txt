@@ -1,0 +1,22 @@
+fibonacci series
+
+#include <stdio.h>
+
+int main()
+{
+    int fibno,limit,i,first=0,second=1;
+    printf("enter the number limit:");
+    scanf("%d",&limit);
+    for(i=0;i<=limit;i++){
+        if(i<=1){
+            fibno = i;
+        }else{
+            fibno = first + second;
+            first = second;
+            second = fibno;
+        }
+        printf(" %d",fibno);
+    }
+
+    return 0;
+}

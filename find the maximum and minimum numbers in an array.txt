@@ -1,0 +1,25 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int arr[]={10,51,24,89,35};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    int i;
+    int min = arr[0];
+    int max = arr[0];
+    for(i=1;i<n;i++){
+        
+        if(arr[i]<min){
+            min=arr[i];
+        }
+        if(arr[i]>max){
+            max=arr[i];
+        }
+    }
+    printf("the maximun number is %d\n",max);
+    printf("the minimum number is %d",min);
+    return 0;
+}
+
+

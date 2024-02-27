@@ -1,0 +1,14 @@
+
+#include <stdio.h>
+
+int main()
+{
+    char i;
+    printf("print A to Z\n");
+    for(i='A';i<='Z';i++){
+        printf("%c ",i);
+    }
+
+    return 0;
+}
+

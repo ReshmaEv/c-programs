@@ -1,0 +1,39 @@
+logic test2
+
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    printf("enter the number of integers:");
+    scanf("%d",&n);
+    int arr[n],i;
+    int size = sizeof(arr)/sizeof(arr[0]);
+     
+     printf("enter the numbers:");
+     for(int i=0;i<size;i++){
+         scanf("%d",&arr[i]);
+     }
+     int temp;
+     for(i=0;i<size;i++){
+         if(arr[i]>0 && arr[arr[i]-1] != arr[i]){
+             temp = arr[arr[i]-1];
+             arr[arr[i]-1] = arr[i];
+             arr[i] = temp;
+         }
+         if(arr[i]!= i+1){
+             printf("the missing number is %d",i+1);
+         }
+            
+         
+         
+     }
+    
+    
+
+    return 0;
+}
+
+
+
+
